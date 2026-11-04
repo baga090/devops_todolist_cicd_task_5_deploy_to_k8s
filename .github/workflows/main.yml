@@ -123,7 +123,7 @@ jobs:
       environment: development
       image_tag: ${{ github.sha }}
 
-    deploy-staging:
+  deploy-staging:
       name: Deploy to Staging
       needs: [ deploy-dev ]
       uses: ./.github/workflows/deploy.yml
